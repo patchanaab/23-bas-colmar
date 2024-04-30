@@ -10,6 +10,7 @@
 :root{
     --base:#ABABAB;
     --base-1:#424242;
+    --base-2:#F3F0F0
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -44,6 +45,9 @@ header{
     flex: 1;
     font-size: auto;
     line-height: 32px;
+        .colmar{
+            font-weight: bolder;      
+        }
 }
 .nav{
     list-style: none;
@@ -72,11 +76,15 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        }
+          p{
+            margin: 24px;
+          }
             .button{
                 padding: 8px 60px;
                 color:white;
                 background-color:var(--base-1);}
+    }
+            
 }
 
 .information{
@@ -129,7 +137,7 @@ header{
     
 }
 .course{
-    background-color: var(--base);
+    background-color: var(--base-2);
     margin: 0 auto;
         h2{
             padding-top: 32px;
