@@ -16,6 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 h1{
+    text-align: center;
     font-size: 64px;
     color: var(--base-1);
 }
@@ -28,6 +29,11 @@ h2{
 p{
     font-size: 18px;
 }
+.card-img:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -54,14 +60,17 @@ header{
     
   li{
     display: inline-block;
-    gap: 16px;
+    padding-right: 16px;
     a{
         color:var(--base-1)}
     }
 }
 .hero{
-    display: flex;   
+    display: flex; 
     background-color: var(--base);
+    @media (max-width: 480px) {
+        flex-direction: column;
+      }
     .hero-first{
         display: flex;
         margin-left: 24px;
@@ -82,7 +91,8 @@ header{
             .button{
                 padding: 8px 60px;
                 color:white;
-                background-color:var(--base-1);}
+                background-color:var(--base-1);
+            }
     }
             
 }
@@ -92,6 +102,9 @@ header{
     display: flex;
     background-color:white;
     margin: 0 auto;
+    @media (max-width: 480px) {
+        flex-direction: column;
+      }
          .info-first{
             display: flex;
             flex-direction: column;
@@ -103,6 +116,7 @@ header{
                 a{
                     margin-top: 32px;
                     margin-bottom: 32px;
+                    color: var(--base-1);
                 }
         }
             .card-container{
@@ -118,6 +132,7 @@ header{
                                 height: auto;
                                 width:35%;
                                 margin: 16px;
+                                transition: 1s;
                                
                             }
                             .card-content{
@@ -164,6 +179,7 @@ header{
                             display: block;
                             width: 100%;
                             height: auto;
+                            transition: 1s;
                         }
                         .card-content{
                             padding-left: 16px;
@@ -181,6 +197,9 @@ header{
     background-color: white;
     margin: 0 auto;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    @media (max-width: 480px) {
+        flex-direction: column;
+      }
         h2{
            text-align: center;
         }
@@ -226,7 +245,8 @@ header{
                                             padding-left: 16px;
                                             padding-bottom: 16px;
                                             padding-top: 16px;
-                                            height: auto;                                        
+                                            height: auto;
+                                            transition: 1s;                                        
                                         }
                             }
                 
@@ -243,3 +263,4 @@ footer{
             color: var(--base-1);
         }
 }
+
