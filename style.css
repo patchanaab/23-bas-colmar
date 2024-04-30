@@ -11,6 +11,9 @@
     --base:#ABABAB;
     --base-1:#424242;
 }
+body {
+    font-family: "Poppins", sans-serif;
+}
 h1{
     font-size: 64px;
     color: var(--base-1);
@@ -77,8 +80,10 @@ header{
 }
 
 .information{
+    width: 100%;
     display: flex;
     background-color:white;
+    margin: 0 auto;
          .info-first{
             display: flex;
             flex-direction: column;
@@ -96,11 +101,137 @@ header{
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
+                width: 40%;
                     .card{
                         display: flex;
                         padding: 16px;
+                        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+                            .card-img{
+                                height: auto;
+                                width:35%;
+                                margin: 16px;
+                               
+                            }
+                            .card-content{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items:flex-start;
+                                width: 65%;
+                                padding-left: 16px;
+                                    p{
+                                        margin-top: 8px;
+                                        margin-bottom: 8px;
+                                    }
+                            }
                     }
             }
     
 }
-    
+.course{
+    background-color: var(--base);
+    margin: 0 auto;
+        h2{
+            padding-top: 32px;
+            text-align: center;
+        }
+        .card-container{
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            padding-left: 72px;
+            padding-right: 72px;
+            padding-bottom: 32px;
+            gap: 32px;
+            
+                .card{
+                    width: calc(33.33% - 32px);
+                    height: auto;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: flex-start;
+                    background-color: white;
+                    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+                        .card-img{
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                        }
+                        .card-content{
+                            padding-left: 16px;
+                            padding-top: 16px;
+                            padding-bottom: 24px;
+                                p{
+                                    padding-top: 8px;
+                                }
+                        }    
+                }
+        }
+}
+.thesis{
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        h2{
+           text-align: center;
+        }
+            .lastp{
+                display: flex;
+                flex-direction: row;
+                    .thesis-f{
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        .vdo{
+                            display:block;
+                            width: 100%;
+                                
+                        }
+                        h3{
+                            padding-top: 32px;
+                            padding-bottom: 8px;
+                        }
+                        p{
+                            padding-bottom: 32px;
+                        }
+                    }
+                    .card-container{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        width: 40%;
+                            .card{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+                                    .card-content{
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding-left: 16px;
+                                        justify-content: center;
+                                    }
+                                        .card-img{
+                                            padding-left: 16px;
+                                            padding-bottom: 16px;
+                                            padding-top: 16px;
+                                            height: auto;                                        
+                                        }
+                            }
+                
+                    }
+            }
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-left: 24px;
+    color: var(--base-1);
+        a{
+            color: var(--base-1);
+        }
+}
